@@ -1,0 +1,27 @@
+{
+  "name": "ecobazar-0_main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/style.scss css/style.css --watch",
+    "prefix": "postcss css/style.css --use autoprefixer -o css/style.prefixed.css --watch",
+    "dev": "concurrently \"npm run sass\" \"npm run prefix\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.101.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.5.2",
+    "postcss-cli": "^11.0.1",
+    "concurrently": "^10.0.3"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
